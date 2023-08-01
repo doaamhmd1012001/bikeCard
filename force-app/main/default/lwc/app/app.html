@@ -1,0 +1,19 @@
+<template>
+    <template lwc:if={ready}>
+        <div id="display">
+            <div> Name: {name}</div>
+            <div>Description: {description}</div>
+            <lightning-badge label={category}></lightning-badge>
+            <lightning-badge label={material}></lightning-badge>
+            <div>Price: {price}</div>
+            <div><img src={pictureurl}></div>
+        </div>
+    </template>
+    <template lwc:else>
+        <div id="wating">Loading...</div>
+    </template>
+    <!--The identifiers in the curly braces {} are 
+        bound to the fields of the same name in the corresponding 
+        JavaScript class.
+    -->
+</template>
